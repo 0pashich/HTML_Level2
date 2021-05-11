@@ -418,9 +418,17 @@ body {
 
 .copyright__icon-wrapper {}
 
+/* .copyright__icon-link {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: var(--white);
+} */
+
 .copyright__icon {
     background-color: var(--white);
     margin: 0 0 0 5px;
+    padding: 8px 8px;
 }
 
 .headline {
