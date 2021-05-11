@@ -460,6 +460,7 @@ body {
     line-height: 17px;
     color: var(--white);
     border: none;
+    text-transform: uppercase;
 }
 
 .registration__arrow {
@@ -571,6 +572,6 @@ body {
     display: none;
 }
 
-.header__button:active+.navigation, .header__button:focus+.navigation {
+.header__button:active+.navigation, .header__button:hover+.navigation, .header__button:focus+.navigation {
     display: block;
 }
