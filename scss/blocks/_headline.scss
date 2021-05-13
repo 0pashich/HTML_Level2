@@ -1,0 +1,14 @@
+
+.headline {
+    background-color: $light-pink;
+    min-height: 148px;
+    display: flex;
+    align-items: center;
+
+    &__title {
+        @include font(400, 24px, 29px);
+        color: $dark-pink;
+        text-transform: uppercase;
+    }
+}
+

@@ -1,0 +1,8 @@
+@mixin font($width: 400, $size: 16px, $height: 19px) {
+    font-family: Lato;
+    font-weight: $width;
+    font-size: $size;
+    font-style: normal;
+    line-height: $height;
+    // color: $color;  , $color: black
+}

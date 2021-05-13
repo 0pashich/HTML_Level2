@@ -1,0 +1,141 @@
+.cart {
+    &__form {
+        display: flex;
+        margin: 96px 0 128px;
+        justify-content: space-between;
+    }
+    &__box {
+    }
+    &__list {
+        margin: 0 0 72px;
+    }
+    &__item {
+        width: 652px;
+        height: 306px;
+        box-shadow: 10px 10px 20px rgba(122, 122, 122, 0.5);
+        margin: 0 0 40px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__image {
+    }
+    &__text {
+        padding: 22px 97px 0 31px;
+    }
+    &__title {
+        margin: 0 0 42px 0;
+        @include font(400, 24px, 29px);
+        color: $gray-blue;
+        text-transform: uppercase;
+    }
+    &__label {
+        @include font(400, 22px, 26px);
+        color: $wet-asphalt;
+        margin: 0 0 6px;
+    }
+    &__price {
+        color: $dark-pink;
+    }
+    &__color {
+    }
+    &__size {
+    }
+    &__quantity {
+        width: 43px;
+        height: 24px;
+        margin: 0 0 0 24px;
+        border: 1px solid #eaeaea;
+        @include font(400, 18px, 22px);
+        color: #656565;
+        text-align: center;
+    }
+    &__manage-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_manage-button {
+        @include font(300, 14px, 17px);
+        color: $black;
+        min-height: 49px;
+        padding: 0 40px 0;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 1px solid #a4a4a4;
+    }
+    &__fieldset {
+        width: 360px;
+    }
+    &__legend {
+        @include font(300, 16px, 19px);
+        color: $dark-blue;
+        text-transform: uppercase;
+        margin: 7px 0 20px;
+    }
+    &__input {
+        display: block;
+        border: 1px solid #a4a4a4;
+        height: 44px;
+        width: 359px;
+        padding: 0 0 0 16px;
+        color: #b1b1b1;
+        margin: 0 0 21px;
+        box-sizing: border-box;
+    }
+    &__quote {
+        margin: 3px 0 56px;
+        height: 34px;
+        width: 100px;
+        border-radius: 0px;
+        border: 1px solid #a4a4a4;
+        background-color: transparent;
+        text-transform: uppercase;
+        @include font(300, 11px, 13px);
+        color: #4a4a4a;
+    }
+
+    &__checkout {
+        height: 214px;
+        width: 360px;
+        border-radius: 0px;
+        background: #f5f3f3;
+    }
+    &_subtotal {
+        margin: 39px 34px 0 0;
+        @include font(400, 11px, 13px);
+        color: #4a4a4a;
+        text-transform: uppercase;
+        text-align: right;
+    }
+    &__subtotal-price {
+        margin: 0 0 0 10px;
+    }
+    &_total {
+        margin: 12px 37px 0 0;
+        @include font(400, 16px, 19px);
+        color: #4a4a4a;
+        text-transform: uppercase;
+        text-align: right;
+    }
+    &__total-price {
+        margin: 0 0 0 10px;
+        color: #f16d7f;
+        @include font(700, 16px, 19px);
+    }
+    &__line {
+        width: 275px;
+        height: 1px;
+        background: #e2e2e2;
+        margin: 21px auto 17px;
+    }
+    &_button-checkout {
+        display: block;
+        height: 50px;
+        width: 273px;
+        background-color: $dark-pink;
+        @include font(300, 16px, 19px);
+        color: $white;
+        border: none;
+        text-transform: uppercase;
+        margin: 0 auto 0;
+    }
+}

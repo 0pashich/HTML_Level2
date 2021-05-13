@@ -1,0 +1,32 @@
+.feature {
+    background-color: $gray-blue;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 341px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__image {
+        margin: 0 0 25px;
+    }
+
+    &__title {
+        @include font(400, 20px, 24px);
+        color: $dark-white;
+        margin: 0 0 16px;
+    }
+
+    &__text {
+        @include font(300, 14px, 17px);
+        text-align: center;
+        color: $dark-white;
+    }
+}
