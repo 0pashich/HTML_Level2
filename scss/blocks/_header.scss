@@ -21,6 +21,26 @@
         margin: 0 33px 0 0;
     }
 
+    &__cart {
+        position: relative;
+    }
+    &__cart:before {
+        content: "5";
+        width: 19px;
+        height: 19px;
+        //   background: lightblue;
+        position: absolute;
+        right: -5px;
+        bottom: 20px;
+        background-image: url(../img/circle.svg);
+        background-size: 19px 19px;
+        @include font(400, 12px, 14px);
+        color: $white;
+        padding: 3px 0 0 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
     &__button {
         background-color: transparent;
         border: none;

@@ -14,18 +14,34 @@
     }
 
     &__icon-wrapper {
+        display: flex;
+        justify-content: flex-start;
     }
 
-    /* &__icon-link {
+    &__icon-link {
         display: block;
         width: 32px;
         height: 32px;
+        margin: 0 0 0 7px;
         background-color: $white;
-    } */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     &__icon {
         background-color: $white;
-        margin: 0 0 0 5px;
-        padding: 8px 8px;
+        // margin: auto auto;
+        // margin: 0 0 0 5px;
+        // padding: 8px 8px;
+        fill: $black;
+    }
+    &__icon-link:hover {
+        background-color: $dark-pink;
+    }
+
+    &__icon-link:hover &__icon {
+        background-color: $dark-pink;
+        fill: $white;
     }
 }
