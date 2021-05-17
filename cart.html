@@ -71,7 +71,8 @@
                     </nav>
                     <a href="registration.html" class="header__profile"><img src="./img/user.svg" alt="profile"
                             width="29" height="29"></a>
-                    <a href="cart.html" class="header__cart"><img src="./img/cart.svg" alt="cart" width="32" height="29"></a>
+                    <a href="cart.html" class="header__cart"><img src="./img/cart.svg" alt="cart" width="32"
+                            height="29"></a>
                 </div>
             </div>
         </div>
@@ -85,13 +86,13 @@
         <section class="cart container">
             <h2 class="visually-hidden">Cart</h2>
 
-            <form class="cart__form" action="#">
+            <div class="cart__wrapper">
                 <div class="cart__box">
                     <ul class="cart__list">
                         <li class="cart__item">
                             <img class="cart__image" src="./img/cart-1.jpg" alt="product-4" width="263" height="306">
                             <div class="cart__text">
-                                <h3 class="cart__title">mango people 
+                                <h3 class="cart__title">mango people
                                     t-shirt</h3>
                                 <p class="cart__label"> Price: <span class="cart__price">$300</span></p>
                                 <p class="cart__label">Color: <span class="cart__color">Red</span></p>
@@ -116,15 +117,16 @@
                         </li>
                     </ul>
                     <div class="cart__manage-wrapper">
-                        <button class="cart_manage-button">
+                        <button type="button" class="cart_manage-button">
                             clear shopping cart
                         </button>
-                        <button class="cart_manage-button">
+                        <button type="button" class="cart_manage-button">
                             continue shopping
                         </button>
                     </div>
                 </div>
                 <div class="cart__box">
+                    <form class="cart__form" action="#"></form>
                     <fieldset class="cart__fieldset">
                         <legend class="cart__legend">
                             shipping adress
@@ -136,19 +138,20 @@
                         <label class="cart__label visually-hidden" for="postcode">Postcode / Zip</label>
                         <input class="cart__input" type="text" name="postcode" placeholder="Postcode / Zip"
                             id="postcode">
-                        <button class="cart__quote">get a quote</button>
+                        <button type="button" class="cart__quote">get a quote</button>
 
                     </fieldset>
                     <fieldset class="cart__checkout">
                         <p class="cart_subtotal">sub total <span class="cart__subtotal-price">$900</span></p>
                         <p class="cart_total">grand total <span class="cart__total-price">$900</span></p>
                         <div class="cart__line"></div>
-                        <button class="cart_button-checkout">
+                        <button type="submit" class="cart_button-checkout">
                             proceed to checkout
                         </button>
                     </fieldset>
+                    </form>
                 </div>
-            </form>
+            </div>
 
         </section>
     </main>

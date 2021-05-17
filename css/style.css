@@ -899,7 +899,7 @@ body {
   border-top-right-radius: 24px;
 }
 
-.cart__form {
+.cart__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,9 +1,10 @@
 .cart {
-    &__form {
+    &__wrapper {
         display: flex;
         margin: 96px 0 128px;
         justify-content: space-between;
     }
+
     &__box {
     }
     &__list {
@@ -112,7 +113,7 @@
     &_total {
         margin: 12px 37px 0 0;
         @include font(400, 16px, 19px);
-        color:  $white-aluminum;
+        color: $white-aluminum;
         text-transform: uppercase;
         text-align: right;
     }
