@@ -2,24 +2,47 @@
     background-image: url(../img/subscribe_background.jpg);
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     background-color: $smoke-white;
 
     &__wrapper {
         min-height: 448px;
         display: flex;
         justify-content: space-between;
+        @include tablet {
+            flex-wrap: wrap;
+            min-height: 693px;
+            flex-direction: column;
+            align-items: center;
+        }
+        @include mobile {
+            flex-wrap: wrap;
+            min-height: 550px;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__post {
         width: 360px;
         min-height: 225px;
         margin: 97px 0 0;
+        @include tablet {
+            margin: 54px 0 0;
+        }
     }
 
     &__form-wrapper {
         width: 557px;
         min-height: 142px;
         margin: 150px 0 0;
+        @include tablet {
+            margin: 48px 0 140px;
+        }
+        @include mobile {
+            width: 341px;
+            margin: 59px 0 110px;
+        }
     }
 
     &__image {
@@ -70,6 +93,10 @@
         border-bottom-left-radius: 24px;
         border-top-left-radius: 24px;
         outline: none;
+        @include mobile {
+            width: 245px;
+            height: 47px;
+        }
     }
 
     &__button {
@@ -81,5 +108,9 @@
         color: $white;
         border-bottom-right-radius: 24px;
         border-top-right-radius: 24px;
+        @include mobile {
+            width: 96px;
+            height: 47px;
+        }
     }
 }
