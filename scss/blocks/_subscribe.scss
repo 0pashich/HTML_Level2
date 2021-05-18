@@ -9,7 +9,7 @@
         min-height: 448px;
         display: flex;
         justify-content: space-between;
-        @include tablet {
+        @include container {
             flex-wrap: wrap;
             min-height: 693px;
             flex-direction: column;
@@ -27,7 +27,7 @@
         width: 360px;
         min-height: 225px;
         margin: 97px 0 0;
-        @include tablet {
+        @include container {
             margin: 54px 0 0;
         }
     }
@@ -36,7 +36,7 @@
         width: 557px;
         min-height: 142px;
         margin: 150px 0 0;
-        @include tablet {
+        @include container {
             margin: 48px 0 140px;
         }
         @include mobile {
