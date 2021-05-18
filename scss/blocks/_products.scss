@@ -17,6 +17,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @include container {
+            justify-content: space-evenly;
+        }
     }
 
     &__item {
@@ -24,6 +28,17 @@
         min-height: 581px;
         background-color: $light-gray;
         margin: 0 0 30px;
+        @include container {
+            margin: 0 0 17px 0;
+        }
+    }
+    &__item:nth-child(odd) {
+        @include container {
+            margin: 0 16px 17px 0;
+        }
+        @include mobile {
+            margin: 0 0 17px 0;
+        }
     }
 
     &__image {

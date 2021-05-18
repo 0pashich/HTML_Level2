@@ -1,12 +1,19 @@
 .offers {
     margin: 0 auto 96px;
+    @include tablet {
+        margin: 0 auto 155px;
+    }
+    @include mobile {
+        margin: 0 auto 64px;
+    }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         @include mobile {
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
         }
     }
 
@@ -29,6 +36,10 @@
             margin: 0 20px 20px 0;
             flex-grow: 1;
         }
+        @include mobile {
+            width: 344px;
+            margin: 16px 0 16px;
+        }
     }
 
     &__item_woman {
@@ -44,6 +55,9 @@
         @include tablet {
             margin: 0 0 20px 0;
         }
+        @include mobile {
+            margin: 16px 0 16px;
+        }
     }
 
     &__item_accesories {
@@ -51,10 +65,15 @@
         min-height: 180px;
         max-width: 100%;
         width: 100%;
+        margin: 0;
         @include tablet {
             max-width: 100%;
         }
-        margin: 0;
+        @include mobile {
+            width: 344px;
+            min-width: 344px;
+            margin: 16px 0 16px;
+        }
     }
 
     &__text {

@@ -3,6 +3,12 @@
     background-color: $pink;
     margin: 0 0 65px;
     justify-content: space-around;
+    @include tablet {
+        margin: 0 0 20px;
+    }
+    @include mobile {
+        margin: 0 0 64px-16px;
+    }
 
     &__title-wrapper {
         display: flex;
@@ -10,6 +16,9 @@
         justify-content: center;
         padding: 0 0 0 88px;
         min-height: 363px;
+        @include mobile {
+            padding: 0 0 0 28px;
+        }
     }
 
     &__title {
