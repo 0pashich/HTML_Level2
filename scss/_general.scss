@@ -16,6 +16,7 @@ body {
 .container {
     max-width: 1138px;
     margin: 0 auto;
+    width: 96%;
     @include tablet {
         width: 96%;
     }

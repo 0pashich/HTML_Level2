@@ -9,6 +9,7 @@
     box-sizing: border-box;
     padding: 37px 0 0 33px;
     display: none;
+    z-index: 2;
 
     &__title {
         @include font(700, 14px, 17px);
@@ -18,7 +19,7 @@
     }
 
     &__subtitle-link {
-        @include font(400, 14px, 17px);      
+        @include font(400, 14px, 17px);
         text-transform: uppercase;
         color: $dark-pink;
         text-decoration: none;
@@ -33,7 +34,7 @@
     }
 
     &__link {
-        @include font(400, 14px, 17px); 
+        @include font(400, 14px, 17px);
         color: $dull-gray;
         text-decoration: none;
     }
