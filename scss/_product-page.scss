@@ -1,35 +1,108 @@
 .carousel-item {
     height: 777px;
+    background-color: $alabaster;
 }
 
-$carousel-control-color: $white;
-$carousel-control-width: 15%;
-$carousel-control-opacity: 0.5;
-$carousel-control-hover-opacity: 0.9;
-$carousel-control-transition: opacity 0.15s ease;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: $carousel-control-icon-background;
+}
 
-$carousel-indicator-width: 30px;
-$carousel-indicator-height: 3px;
-$carousel-indicator-hit-area-height: 10px;
-$carousel-indicator-spacer: 3px;
-$carousel-indicator-opacity: 0.5;
-$carousel-indicator-active-bg: $white;
-$carousel-indicator-active-opacity: 1;
-$carousel-indicator-transition: opacity 0.6s ease;
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml,<svg width="13" height="23" viewBox="0 0 13 23"  xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z" fill="black"/>
+    </svg>');
+}
 
-$carousel-caption-width: 70%;
-$carousel-caption-color: $white;
-$carousel-caption-padding-y: 1.25rem;
-$carousel-caption-spacer: 1.25rem;
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml,<svg width="13" height="23" viewBox="0 0 13 23"  xmlns="http://www.w3.org/2000/svg">
+<path d="M0.299805 19.2499L8.0498 11.4999L0.299805 3.7499L1.8498 0.649902L12.6998 11.4999L1.8498 22.3499L0.299805 19.2499Z" fill="F16D7F"/>
+</svg>');
+}
 
-$carousel-control-icon-width: 2rem;
+.carousel-control-prev {
+    justify-content: flex-start;
+}
 
-$carousel-control-prev-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
-$carousel-control-next-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+.carousel-control-next {
+    justify-content: flex-end;
+}
 
-$carousel-transition-duration: 0.6s;
-$carousel-transition: transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+.description {
+    position: relative;
+    margin: -65px auto 130px;
+    z-index: 10;
+    background-color: $white;
+    padding: 0;
+}
 
-$carousel-dark-indicator-active-bg: $black;
-$carousel-dark-caption-color: $black;
-$carousel-dark-control-icon-filter: invert(1) grayscale(100);
+.product-category {
+    @include font(300, 14px, 17px);
+    color: $dark-pink;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 65px auto 12px;
+}
+
+.separator {
+    width: 63px;
+    height: 3px;
+    background: $froly;
+}
+.product-name {
+    @include font(300, 18px, 22px);
+    color: $tundora;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 12px auto 48px;
+}
+
+.product-description {
+    @include font(300, 14px, 17px);
+    text-align: center;
+    color: $scorpion;
+    width: 555px;
+}
+
+.product-price {
+    @include font(300, 24px, 29px);
+    color: $froly;
+    text-align: center;
+    margin: 32px auto 0;
+}
+
+.line {
+    width: 641px;
+    height: 1px;
+    background-color: $smoke-white-border;
+    margin: 65px auto 65px;
+}
+
+.form-select {
+    border: none;
+    @include font(400, 14px, 17px);
+    color: $dull-gray;
+    text-transform: uppercase;
+}
+
+.product-button {
+    width: 211px;
+    height: 47px;
+    border: 1px solid $bittersweet;
+    background-color: transparent;
+    @include font(400, 14px, 24px);
+    color: $froly;
+    padding: 0;
+    margin: 48px auto 65px;
+}
+
+.product-button-image {
+    width: 26px;
+    height: 24px;
+    fill: $froly;
+    margin: 0 23px 0 0;
+}
+
+.mb-128 {
+    margin-bottom: 128px;
+}
