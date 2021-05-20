@@ -73,7 +73,7 @@ table {
 }
 
 body {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -151,7 +151,7 @@ body {
   bottom: 20px;
   background-image: url(../img/circle.svg);
   background-size: 19px 19px;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -222,7 +222,7 @@ body {
 }
 
 .brand__title {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 900;
   font-size: 48px;
   line-height: 58px;
@@ -233,7 +233,7 @@ body {
 
 @media (max-width: 1599px) {
   .brand__title {
-    font-family: Lato;
+    font-family: Lato, "Arial", sans-serif;
     font-weight: 900;
     font-size: 44px;
     line-height: 53px;
@@ -242,7 +242,7 @@ body {
 
 @media (max-width: 767px) {
   .brand__title {
-    font-family: Lato;
+    font-family: Lato, "Arial", sans-serif;
     font-weight: 900;
     font-size: 38px;
     line-height: 46px;
@@ -261,7 +261,7 @@ body {
 
 .brand__subtitle {
   display: block;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
@@ -270,7 +270,7 @@ body {
 
 @media (max-width: 1599px) {
   .brand__subtitle {
-    font-family: Lato;
+    font-family: Lato, "Arial", sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -279,7 +279,7 @@ body {
 
 @media (max-width: 767px) {
   .brand__subtitle {
-    font-family: Lato;
+    font-family: Lato, "Arial", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -444,7 +444,7 @@ body {
 }
 
 .feature__title {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -453,7 +453,7 @@ body {
 }
 
 .feature__text {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -504,7 +504,7 @@ body {
   bottom: 20px;
   background-image: url(../img/circle.svg);
   background-size: 19px 19px;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -578,7 +578,7 @@ body {
 }
 
 .headline__title {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
@@ -593,7 +593,7 @@ body {
 }
 
 .headline__breadcrumbs-link {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -603,7 +603,7 @@ body {
 }
 
 .headline__breadcrumbs-link--active {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -611,7 +611,7 @@ body {
 }
 
 .headline__breadcrumbs-slash {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -642,7 +642,7 @@ body {
 }
 
 .navigation__title {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -652,7 +652,7 @@ body {
 }
 
 .navigation__subtitle-link {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -670,7 +670,7 @@ body {
 }
 
 .navigation__link {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -818,7 +818,7 @@ body {
 }
 
 .offers__title {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -827,7 +827,7 @@ body {
 }
 
 .products__headline {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 36px;
@@ -837,7 +837,7 @@ body {
 }
 
 .products__slogan {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -921,7 +921,7 @@ body {
   height: 43px;
   border: 1px solid #ffffff;
   background-color: transparent;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -942,7 +942,7 @@ body {
 }
 
 .products__title {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
@@ -952,7 +952,7 @@ body {
 }
 
 .products__description {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -973,7 +973,7 @@ body {
   border: 1px solid #f16d7f;
   background-color: transparent;
   color: #f26376;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -994,7 +994,7 @@ body {
 }
 
 .registration__legend {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -1008,7 +1008,7 @@ body {
   margin: 21px 0 0;
   border: 1px solid #a4a4a4;
   padding: 0 0 0 17px;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
@@ -1043,7 +1043,7 @@ body {
 
 .registration__radio-label {
   display: block;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 11px;
   line-height: 13px;
@@ -1055,7 +1055,7 @@ body {
   display: block;
   width: 360px;
   margin: 16px 0 39px;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
@@ -1066,7 +1066,7 @@ body {
   height: 50px;
   width: 167px;
   background-color: #f16d7f;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -1084,7 +1084,7 @@ body {
 }
 
 .registration__title {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -1093,7 +1093,7 @@ body {
 }
 
 .registration__text {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -1102,7 +1102,7 @@ body {
 
 .registration__item {
   margin: 0 0 16px 43px;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -1244,7 +1244,7 @@ body {
   border: none;
   width: 256px;
   height: 49px;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -1267,7 +1267,7 @@ body {
   border: none;
   width: 100px;
   height: 49px;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -1317,7 +1317,7 @@ body {
 
 .cart__title {
   margin: 0 0 42px 0;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
@@ -1326,7 +1326,7 @@ body {
 }
 
 .cart__label {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -1343,7 +1343,7 @@ body {
   height: 24px;
   margin: 0 0 0 24px;
   border: 1px solid #eaeaea;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -1361,7 +1361,7 @@ body {
 }
 
 .cart_manage-button {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -1378,7 +1378,7 @@ body {
 }
 
 .cart__legend {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -1407,7 +1407,7 @@ body {
   border: 1px solid #a4a4a4;
   background-color: transparent;
   text-transform: uppercase;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 11px;
   line-height: 13px;
@@ -1423,7 +1423,7 @@ body {
 
 .cart_subtotal {
   margin: 39px 34px 0 0;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
@@ -1438,7 +1438,7 @@ body {
 
 .cart_total {
   margin: 12px 37px 0 0;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -1450,7 +1450,7 @@ body {
 .cart__total-price {
   margin: 0 0 0 10px;
   color: #f16d7f;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -1468,7 +1468,7 @@ body {
   height: 50px;
   width: 273px;
   background-color: #f16d7f;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -1517,7 +1517,7 @@ body {
 }
 
 .product-category {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -1534,7 +1534,7 @@ body {
 }
 
 .product-name {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
@@ -1545,7 +1545,7 @@ body {
 }
 
 .product-description {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -1555,7 +1555,7 @@ body {
 }
 
 .product-price {
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -1573,7 +1573,7 @@ body {
 
 .form-select {
   border: none;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -1586,7 +1586,7 @@ body {
   height: 47px;
   border: 1px solid #ff6a6a;
   background-color: transparent;
-  font-family: Lato;
+  font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
