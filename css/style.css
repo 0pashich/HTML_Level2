@@ -41,7 +41,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 16px;
-  font-style: normal;
   line-height: 19px;
 }
 
@@ -57,8 +56,21 @@ body {
 }
 
 .container {
-  width: 1138px;
+  max-width: 1138px;
   margin: 0 auto;
+  width: 96%;
+}
+
+@media (max-width: 1599px) {
+  .container {
+    width: 96%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 92%;
+  }
 }
 
 .header {
@@ -107,7 +119,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 12px;
-  font-style: normal;
   line-height: 14px;
   color: #ffffff;
   padding: 3px 0 0 0;
@@ -139,6 +150,20 @@ body {
   display: flex;
   background-color: #f1e4e6;
   margin: 0 0 65px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 1599px) {
+  .brand {
+    margin: 0 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand {
+    margin: 0 0 48px;
+  }
 }
 
 .brand__title-wrapper {
@@ -148,17 +173,55 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 0 0 91px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 0 88px;
+  min-height: 363px;
+}
+
+@media (max-width: 767px) {
+  .brand__title-wrapper {
+    padding: 0 0 0 28px;
+  }
 }
 
 .brand__title {
   font-family: Lato;
   font-weight: 900;
   font-size: 48px;
-  font-style: normal;
   line-height: 58px;
   text-transform: uppercase;
   color: #222222;
+  position: relative;
+}
+
+@media (max-width: 1599px) {
+  .brand__title {
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand__title {
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
+.brand__title:before {
+  content: "";
+  position: absolute;
+  background-color: #f16d7f;
+  top: 0px;
+  left: -28px;
+  width: 12px;
+  height: 100%;
 }
 
 .brand__subtitle {
@@ -166,13 +229,43 @@ body {
   font-family: Lato;
   font-weight: 700;
   font-size: 32px;
-  font-style: normal;
   line-height: 38px;
   color: #222222;
 }
 
+@media (max-width: 1599px) {
+  .brand__subtitle {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand__subtitle {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 .brand__subtitle-pink {
   color: #f16d7f;
+}
+
+@media (max-width: 1599px) {
+  .brand__image {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand__image {
+    display: none;
+  }
 }
 
 .copyright {
@@ -192,9 +285,25 @@ body {
   min-height: 79px;
 }
 
+@media (max-width: 767px) {
+  .copyright__wrapper {
+    min-height: 143px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .copyright__text {
   color: #fbfbfb;
   padding: 0 0 0 5px;
+}
+
+@media (max-width: 767px) {
+  .copyright__text {
+    margin: 0 0 6px 0;
+  }
 }
 
 .copyright__icon-wrapper {
@@ -204,6 +313,12 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media (max-width: 767px) {
+  .copyright__icon-wrapper {
+    margin: 43px 0 0 0;
+  }
 }
 
 .copyright__icon-link {
@@ -241,6 +356,12 @@ body {
   background-color: #222224;
 }
 
+@media (max-width: 1159px) {
+  .feature {
+    padding: 0 0 64px;
+  }
+}
+
 .feature__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,6 +373,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 341px;
+}
+
+@media (max-width: 1159px) {
+  .feature__list {
+    width: 360px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .feature__item {
@@ -267,6 +398,12 @@ body {
           align-items: center;
 }
 
+@media (max-width: 1159px) {
+  .feature__item {
+    margin: 48px 0 0;
+  }
+}
+
 .feature__image {
   margin: 0 0 25px;
 }
@@ -275,7 +412,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 20px;
-  font-style: normal;
   line-height: 24px;
   color: #fbfbfb;
   margin: 0 0 16px;
@@ -285,7 +421,6 @@ body {
   font-family: Lato;
   font-weight: 300;
   font-size: 14px;
-  font-style: normal;
   line-height: 17px;
   text-align: center;
   color: #fbfbfb;
@@ -337,7 +472,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 12px;
-  font-style: normal;
   line-height: 14px;
   color: #ffffff;
   padding: 3px 0 0 0;
@@ -374,14 +508,86 @@ body {
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  .headline {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.headline__wrapper {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .headline__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .headline__title {
   font-family: Lato;
   font-weight: 400;
   font-size: 24px;
-  font-style: normal;
   line-height: 29px;
   color: #f16d7f;
   text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .headline__title {
+    margin: 24px 0 0 0;
+  }
+}
+
+.headline__breadcrumbs-link {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.headline__breadcrumbs-link--active {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+}
+
+.headline__breadcrumbs-slash {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .headline__breadcrumbs {
+    margin: 0 0 46px 0;
+  }
 }
 
 .navigation {
@@ -397,13 +603,13 @@ body {
           box-sizing: border-box;
   padding: 37px 0 0 33px;
   display: none;
+  z-index: 2;
 }
 
 .navigation__title {
   font-family: Lato;
   font-weight: 700;
   font-size: 14px;
-  font-style: normal;
   line-height: 17px;
   text-transform: uppercase;
   padding: 0 0 0 1px;
@@ -414,7 +620,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 14px;
-  font-style: normal;
   line-height: 17px;
   text-transform: uppercase;
   color: #f16d7f;
@@ -433,7 +638,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 14px;
-  font-style: normal;
   line-height: 17px;
   color: #6f6e6e;
   text-decoration: none;
@@ -451,6 +655,18 @@ body {
   margin: 0 auto 96px;
 }
 
+@media (max-width: 1599px) {
+  .offers {
+    margin: 0 auto 155px;
+  }
+}
+
+@media (max-width: 767px) {
+  .offers {
+    margin: 0 auto 64px;
+  }
+}
+
 .offers__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -462,7 +678,20 @@ body {
           justify-content: space-between;
 }
 
+@media (max-width: 767px) {
+  .offers__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .offers__item {
+  max-width: 360px;
   width: 360px;
   min-height: 260px;
   background-color: rgba(34, 22, 22, 0.7);
@@ -480,6 +709,26 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-position: center;
+}
+
+@media (max-width: 1599px) {
+  .offers__item {
+    width: 30%;
+    min-width: 232px;
+    height: auto;
+    margin: 0 20px 20px 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .offers__item {
+    width: 344px;
+    margin: 16px 0 16px;
+  }
 }
 
 .offers__item_woman {
@@ -494,11 +743,38 @@ body {
   background-image: url(../img/offer_for_kids.jpg);
 }
 
+@media (max-width: 1599px) {
+  .offers__item_kids {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .offers__item_kids {
+    margin: 16px 0 16px;
+  }
+}
+
 .offers__item_accesories {
   background-image: url(../img/offer_for_accesories.jpg);
   min-height: 180px;
+  max-width: 100%;
   width: 100%;
   margin: 0;
+}
+
+@media (max-width: 1599px) {
+  .offers__item_accesories {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .offers__item_accesories {
+    width: 344px;
+    min-width: 344px;
+    margin: 16px 0 16px;
+  }
 }
 
 .offers__text {
@@ -510,7 +786,6 @@ body {
   font-family: Lato;
   font-weight: 700;
   font-size: 24px;
-  font-style: normal;
   line-height: 29px;
   color: #f16d7f;
   text-transform: uppercase;
@@ -520,7 +795,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 30px;
-  font-style: normal;
   line-height: 36px;
   color: #222222;
   margin: 0 0 6px;
@@ -531,7 +805,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 14px;
-  font-style: normal;
   line-height: 17px;
   color: #9f9f9f;
   margin: 0 0 48px;
@@ -549,11 +822,37 @@ body {
           justify-content: space-between;
 }
 
+@media (max-width: 1159px) {
+  .products__list {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .products__item {
   width: 360px;
   min-height: 581px;
   background-color: #f8f8f8;
   margin: 0 0 30px;
+}
+
+@media (max-width: 1159px) {
+  .products__item {
+    margin: 0 0 17px 0;
+  }
+}
+
+@media (max-width: 1159px) {
+  .products__item:nth-child(odd) {
+    margin: 0 16px 17px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .products__item:nth-child(odd) {
+    margin: 0 0 17px 0;
+  }
 }
 
 .products__wrapper-overlay {
@@ -590,7 +889,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 14px;
-  font-style: normal;
   line-height: 24px;
   color: #ffffff;
   background-image: url(../img/cart.svg);
@@ -612,7 +910,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 13px;
-  font-style: normal;
   line-height: 16px;
   text-transform: uppercase;
   color: #000000;
@@ -623,7 +920,6 @@ body {
   font-family: Lato;
   font-weight: 300;
   font-size: 14px;
-  font-style: normal;
   line-height: 17px;
   color: #5d5d5d;
   padding: 13px 28px 0 17px;
@@ -645,7 +941,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 16px;
-  font-style: normal;
   line-height: 19px;
   text-align: center;
 }
@@ -667,7 +962,6 @@ body {
   font-family: Lato;
   font-weight: 300;
   font-size: 16px;
-  font-style: normal;
   line-height: 19px;
   color: #222222;
 }
@@ -682,7 +976,6 @@ body {
   font-family: Lato;
   font-weight: 300;
   font-size: 13px;
-  font-style: normal;
   line-height: 16px;
   color: #222222;
 }
@@ -718,7 +1011,6 @@ body {
   font-family: Lato;
   font-weight: 300;
   font-size: 11px;
-  font-style: normal;
   line-height: 13px;
   color: #000000;
   padding: 0 20px 0 10px;
@@ -731,7 +1023,6 @@ body {
   font-family: Lato;
   font-weight: 300;
   font-size: 13px;
-  font-style: normal;
   line-height: 16px;
   color: #b1b1b1;
 }
@@ -743,7 +1034,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 14px;
-  font-style: normal;
   line-height: 17px;
   color: #ffffff;
   border: none;
@@ -762,7 +1052,6 @@ body {
   font-family: Lato;
   font-weight: 300;
   font-size: 24px;
-  font-style: normal;
   line-height: 29px;
   text-transform: uppercase;
   margin: 0 0 22px;
@@ -772,7 +1061,6 @@ body {
   font-family: Lato;
   font-weight: 300;
   font-size: 24px;
-  font-style: normal;
   line-height: 29px;
   margin: 0 0 21px;
 }
@@ -782,7 +1070,6 @@ body {
   font-family: Lato;
   font-weight: 300;
   font-size: 24px;
-  font-style: normal;
   line-height: 29px;
   position: relative;
 }
@@ -800,7 +1087,8 @@ body {
 .subscribe {
   background-image: url(../img/subscribe_background.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 30% center;
+  background-size: cover;
   background-color: #f1f1f1;
 }
 
@@ -814,16 +1102,65 @@ body {
           justify-content: space-between;
 }
 
+@media (max-width: 1159px) {
+  .subscribe__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-height: 693px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribe__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-height: 550px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .subscribe__post {
   width: 360px;
   min-height: 225px;
   margin: 97px 0 0;
 }
 
+@media (max-width: 1159px) {
+  .subscribe__post {
+    margin: 54px 0 0;
+  }
+}
+
 .subscribe__form-wrapper {
   width: 557px;
   min-height: 142px;
   margin: 150px 0 0;
+}
+
+@media (max-width: 1159px) {
+  .subscribe__form-wrapper {
+    margin: 48px 0 140px;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribe__form-wrapper {
+    width: 341px;
+    margin: 59px 0 110px;
+  }
 }
 
 .subscribe__image {
@@ -875,13 +1212,19 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 14px;
-  font-style: normal;
   line-height: 17px;
   color: #222224;
   padding: 0 0 0 22px;
   border-bottom-left-radius: 24px;
   border-top-left-radius: 24px;
   outline: none;
+}
+
+@media (max-width: 767px) {
+  .subscribe__input {
+    width: 245px;
+    height: 47px;
+  }
 }
 
 .subscribe__button {
@@ -892,11 +1235,17 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 14px;
-  font-style: normal;
   line-height: 17px;
   color: #ffffff;
   border-bottom-right-radius: 24px;
   border-top-right-radius: 24px;
+}
+
+@media (max-width: 767px) {
+  .subscribe__button {
+    width: 96px;
+    height: 47px;
+  }
 }
 
 .cart__wrapper {
@@ -936,7 +1285,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 24px;
-  font-style: normal;
   line-height: 29px;
   color: #222224;
   text-transform: uppercase;
@@ -946,7 +1294,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 22px;
-  font-style: normal;
   line-height: 26px;
   color: #575757;
   margin: 0 0 6px;
@@ -964,7 +1311,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 18px;
-  font-style: normal;
   line-height: 22px;
   color: #6f6e6e;
   text-align: center;
@@ -983,7 +1329,6 @@ body {
   font-family: Lato;
   font-weight: 300;
   font-size: 14px;
-  font-style: normal;
   line-height: 17px;
   color: #000000;
   min-height: 49px;
@@ -1001,7 +1346,6 @@ body {
   font-family: Lato;
   font-weight: 300;
   font-size: 16px;
-  font-style: normal;
   line-height: 19px;
   color: #222222;
   text-transform: uppercase;
@@ -1031,7 +1375,6 @@ body {
   font-family: Lato;
   font-weight: 300;
   font-size: 11px;
-  font-style: normal;
   line-height: 13px;
   color: #a4a4a4;
 }
@@ -1048,7 +1391,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 11px;
-  font-style: normal;
   line-height: 13px;
   color: #a4a4a4;
   text-transform: uppercase;
@@ -1064,7 +1406,6 @@ body {
   font-family: Lato;
   font-weight: 400;
   font-size: 16px;
-  font-style: normal;
   line-height: 19px;
   color: #a4a4a4;
   text-transform: uppercase;
@@ -1077,7 +1418,6 @@ body {
   font-family: Lato;
   font-weight: 700;
   font-size: 16px;
-  font-style: normal;
   line-height: 19px;
 }
 
@@ -1096,11 +1436,14 @@ body {
   font-family: Lato;
   font-weight: 300;
   font-size: 16px;
-  font-style: normal;
   line-height: 19px;
   color: #ffffff;
   border: none;
   text-transform: uppercase;
   margin: 0 auto 0;
+}
+
+.carousel-item {
+  height: 777px;
 }
 /*# sourceMappingURL=style.css.map */

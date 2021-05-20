@@ -2,7 +2,23 @@
     font-family: Lato;
     font-weight: $width;
     font-size: $size;
-    font-style: normal;
     line-height: $height;
-    // color: $color;  , $color: black
+}
+
+@mixin tablet {
+    @media (max-width: $max-tablet-width) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $max-mobile-width) {
+        @content;
+    }
+}
+
+@mixin container {
+    @media (max-width: $min-container-width) {
+        @content;
+    }
 }

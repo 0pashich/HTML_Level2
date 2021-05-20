@@ -14,6 +14,14 @@ body {
 }
 
 .container {
-    width: 1138px;
+    max-width: 1138px;
     margin: 0 auto;
+    width: 96%;
+    @include tablet {
+        width: 96%;
+    }
+
+    @include mobile {
+        width: 92%;
+    }
 }

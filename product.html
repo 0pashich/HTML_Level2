@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
-    <title>Shop</title>
+    <title>Product</title>
 </head>
 
 <body>
@@ -71,8 +72,7 @@
                     <a href="registration.html" class="header__profile"><img src="./img/user.svg" alt="profile"
                             width="29" height="29"></a>
                     <a href="cart.html" class="header__cart">
-                        <img  class="header__cart-image" src="./img/cart.svg" alt="cart" width="32"
-                            height="29"></a>
+                        <img class="header__cart-image" src="./img/cart.svg" alt="cart" width="32" height="29"></a>
                 </div>
             </div>
         </div>
@@ -80,41 +80,57 @@
 
     </header>
     <main>
-        <section class="brand">
-            <img class="brand__image" src="./img/main_man.png" alt="man" width="800" height="764">
-            <div class="brand__title-wrapper">
-                <h1 class="brand__title">the brand <span class="brand__subtitle"> of luxerious
-                        <span class="brand__subtitle-pink"> fashion</span></span></h1>
+        <section class="headline ">
+            <div class="headline__wrapper container">
+                <h1 class="headline__title">new arrivals </h1>
+                <p class="headline__breadcrumbs">
+                    <a href="#" class="headline__breadcrumbs-link">home </a>
+                    <span class="headline__breadcrumbs-slash">/</span>
+                    <a href="#" class="headline__breadcrumbs-link">men </a>
+                    <span class="headline__breadcrumbs-slash">/</span>
+                    <a href="#" class="headline__breadcrumbs-link headline__breadcrumbs-link--active">new arrivals </a>
+                </p>
             </div>
         </section>
-        <section class="offers container">
-            <h2 class="visually-hidden">offers</h2>
-            <ul class="offers__list">
-                <li class="offers__item offers__item_woman">
-                    <p class="offers__text">30% off</p>
-                    <h3 class="offers__title">for women</h3>
-                </li>
-                <li class="offers__item offers__item_man">
-                    <p class="offers__text">hot deal</p>
-                    <h3 class="offers__title">for men</h3>
-                </li>
-                <li class="offers__item offers__item_kids">
-                    <p class="offers__text">new arrivals</p>
-                    <h3 class="offers__title">for kids</h3>
-                </li>
-                <li class="offers__item offers__item_accesories">
-                    <p class="offers__text">luxirous & trendy</p>
-                    <h3 class="offers__title">accesories</h3>
-                </li>
-            </ul>
+        <section class="slide">
+            <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/slide-1.jpg" class="d-block w-100" alt="slide-1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slide-1.jpg" class="d-block w-100" alt="slide-1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slide-1.jpg" class="d-block w-100" alt="slide-1">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon carousel-dark-control-icon-filter"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
         </section>
+        <section class="description">
+
+        </section>
+
+
+
         <section class="products container">
-            <h2 class="products__headline">Fetured Items</h2>
-            <p class="products__slogan">Shop for items based on what we featured in this week</p>
+            <h2 class="visually-hidden">Fetured Items</h2>
+
             <ul class="products__list">
                 <li class="products__item">
                     <div class="products__wrapper-overlay">
-                        <img class="products__image" src="./img/product-1.jpg" alt="product-1" width="360" height="420">
+                        <img class="products__image" src="./img/product-4.jpg" alt="product-1" width="360" height="420">
                         <button type="button" class="products__button"> Add to cart </button>
                     </div>
                     <h3 class="products__title">ellery x m'o capsule</h3>
@@ -125,7 +141,7 @@
                 </li>
                 <li class="products__item">
                     <div class="products__wrapper-overlay">
-                        <img class="products__image" src="./img/product-2.jpg" alt="product-2" width="360" height="420">
+                        <img class="products__image" src="./img/product-3.jpg" alt="product-2" width="360" height="420">
                         <button type="button" class="products__button"> Add to cart </button>
                     </div>
                     <h3 class="products__title">ellery x m'o capsule</h3>
@@ -136,40 +152,7 @@
                 </li>
                 <li class="products__item">
                     <div class="products__wrapper-overlay">
-                        <img class="products__image" src="./img/product-3.jpg" alt="product-3" width="360" height="420">
-                        <button type="button" class="products__button"> Add to cart </button>
-                    </div>
-                    <h3 class="products__title">ellery x m'o capsule</h3>
-                    <p class="products__description">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="products__price">$52.00</p>
-                </li>
-                <li class="products__item">
-                    <div class="products__wrapper-overlay">
-                        <img class="products__image" src="./img/product-4.jpg" alt="product-4" width="360" height="420">
-                        <button type="button" class="products__button"> Add to cart </button>
-                    </div>
-                    <h3 class="products__title">ellery x m'o capsule</h3>
-                    <p class="products__description">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="products__price">$52.00</p>
-                </li>
-                <li class="products__item">
-                    <div class="products__wrapper-overlay">
-                        <img class="products__image" src="./img/product-5.jpg" alt="product-5" width="360" height="420">
-                        <button type="button" class="products__button"> Add to cart </button>
-                    </div>
-                    <h3 class="products__title">ellery x m'o capsule</h3>
-                    <p class="products__description">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="products__price">$52.00</p>
-                </li>
-                <li class="products__item">
-                    <div class="products__wrapper-overlay">
-                        <img class="products__image" src="./img/product-6.jpg" alt="product-6" width="360" height="420">
+                        <img class="products__image" src="./img/product-6.jpg" alt="product-3" width="360" height="420">
                         <button type="button" class="products__button"> Add to cart </button>
                     </div>
                     <h3 class="products__title">ellery x m'o capsule</h3>
@@ -179,33 +162,7 @@
                     <p class="products__price">$52.00</p>
                 </li>
             </ul>
-            <button class="products__button-all" type="button">Browse All Product</button>
-        </section>
-        <section class="feature ">
-            <h2 class="visually-hidden">feature</h2>
-            <ul class="feature__list container">
-                <li class="feature__item">
-                    <img class="feature__image" src="./img/delivery.svg" alt="delivery" width="45" height="32">
-                    <h3 class="feature__title">Free Delivery</h3>
-                    <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
-                        with extensive
-                        models.</p>
-                </li>
-                <li class="feature__item">
-                    <img class="feature__image" src="./img/sales.svg" alt="sales" width="40" height="40">
-                    <h3 class="feature__title">Sales & discounts</h3>
-                    <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
-                        with extensive
-                        models.</p>
-                </li>
-                <li class="feature__item">
-                    <img class="feature__image" src="./img/quality.svg" alt="quality" width="47" height="35">
-                    <h3 class="feature__title">Quality assurance</h3>
-                    <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
-                        with extensive
-                        models.</p>
-                </li>
-            </ul>
+
         </section>
     </main>
     <footer>
@@ -268,6 +225,9 @@
 
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
