@@ -765,7 +765,7 @@ body {
   width: 232px;
   height: 764px;
   position: absolute;
-  left: 0px;
+  right: 0px;
   top: -800px;
   background-color: #ffffff;
   -webkit-box-shadow: -5px 5px 15px rgba(122, 122, 122, 0.3);

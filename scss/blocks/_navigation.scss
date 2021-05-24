@@ -2,7 +2,7 @@
     width: 232px;
     height: 764px;
     position: absolute;
-    left: 0px;
+    right: 0px;
     top: -800px;
     background-color: $white;
     box-shadow: -5px 5px 15px rgba(122, 122, 122, 0.3);
@@ -12,7 +12,6 @@
     transform: translateY(0px);
     transition: transform 0.3s;
     z-index: 10;
-    // display: none;
 
     &__title {
         @include font(700, 14px, 17px);
