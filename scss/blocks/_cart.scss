@@ -54,7 +54,7 @@
         display: flex;
         justify-content: space-between;
     }
-    &_manage-button {
+    &__manage-button {
         @include font(300, 14px, 17px);
         color: $black;
         min-height: 49px;
@@ -100,7 +100,7 @@
         border-radius: 0px;
         background: $smoke-white-background;
     }
-    &_subtotal {
+    &__subtotal {
         margin: 39px 34px 0 0;
         @include font(400, 11px, 13px);
         color: $white-aluminum;
@@ -110,7 +110,7 @@
     &__subtotal-price {
         margin: 0 0 0 10px;
     }
-    &_total {
+    &__total {
         margin: 12px 37px 0 0;
         @include font(400, 16px, 19px);
         color: $white-aluminum;
@@ -128,7 +128,7 @@
         background: $smoke-gray-line;
         margin: 21px auto 17px;
     }
-    &_button-checkout {
+    &__button-checkout {
         display: block;
         height: 50px;
         width: 273px;

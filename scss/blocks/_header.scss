@@ -1,6 +1,7 @@
 .header {
     background-color: $dark-blue;
-    position: relative;
+
+    z-index: 10;
 
     &__navigation {
         display: none;
@@ -15,15 +16,50 @@
 
     &__logo {
         margin: 0 41px 0 0;
+        display: block;
+        transition: transform 0.3s;
+    }
+    &__logo:hover,
+    &__logo:focus {
+        transform: scale(1.2);
+    }
+
+    &__search {
+        display: block;
+        transition: transform 0.3s;
+    }
+    &__search:hover,
+    &__search:focus {
+        transform: scale(1.2);
+    }
+
+    &__contents {
+        display: flex;
+        align-items: center;
+        position: relative;
     }
 
     &__profile {
         margin: 0 33px 0 0;
+        display: block;
+        transition: transform 0.3s;
+    }
+
+    &__profile:hover,
+    &__profile:focus {
+        transform: scale(1.2);
     }
 
     &__cart {
         position: relative;
+        display: block;
+        transition: transform 0.3s;
     }
+    &__cart:hover,
+    &__cart:focus {
+        transform: scale(1.2);
+    }
+
     &__cart:before {
         content: "5";
         width: 19px;
@@ -46,15 +82,27 @@
         border: none;
         margin: 0 33px 0 0;
         min-height: 75px;
+
+        transition: transform 0.3s;
     }
 
-    &__button:active ~ .navigation {
-        display: none;
+    &__button:hover,
+    &__button:focus {
+        transform: scale(1.2);
     }
+
+    /*     &__button:active ~ .navigation {
+        //display: none;
+        transform: translateY(-900px);
+        transition: transform 0.3s;
+    } */
 
     &__button:active + .navigation,
     &__button:hover + .navigation,
     &__button:focus + .navigation {
-        display: block;
+        //display: block;
+        transform: translateY(875px);
+        transition: transform 0.3s;
     }
 }
+
