@@ -81,6 +81,12 @@
         background-repeat: no-repeat;
         background-position: 13px center;
         padding: 0 0 0 37px;
+        transition: border 0.3s;
+    }
+
+    &__button:hover,
+    &__button:focus {
+        border: 1px solid $dark-pink;
     }
 
     &__button {
@@ -119,10 +125,12 @@
         color: $deep-pink;
         @include font(400, 16px, 19px);
         text-align: center;
+        transition: background-color 0.5s;
+        transition: color 0.5s;
     }
 
     &__button-all:hover {
-        background: $dark-pink;
+        background-color: $dark-pink;
         border: 1px solid $bittersweet;
         color: $white;
     }

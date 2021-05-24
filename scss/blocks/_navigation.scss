@@ -2,14 +2,17 @@
     width: 232px;
     height: 764px;
     position: absolute;
-    right: 0px;
-    top: 100%;
+    left: 0px;
+    top: -800px;
     background-color: $white;
     box-shadow: -5px 5px 15px rgba(122, 122, 122, 0.3);
     box-sizing: border-box;
     padding: 37px 0 0 33px;
-    display: none;
-    z-index: 2;
+
+    transform: translateY(0px);
+    transition: transform 0.3s;
+    z-index: 10;
+    // display: none;
 
     &__title {
         @include font(700, 14px, 17px);
@@ -46,4 +49,11 @@
         border: none;
         background-color: transparent;
     }
+    &__close:active {
+    }
+}
+
+.navigation:hover {
+    transform: translateY(875px);
+    transition: transform 0.3s;
 }
