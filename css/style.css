@@ -1520,7 +1520,7 @@ body {
           justify-content: space-between;
 }
 
-.cart_manage-button {
+.cart__manage-button {
   font-family: Lato, "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -1581,7 +1581,7 @@ body {
   background: #f5f3f3;
 }
 
-.cart_subtotal {
+.cart__subtotal {
   margin: 39px 34px 0 0;
   font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
@@ -1596,7 +1596,7 @@ body {
   margin: 0 0 0 10px;
 }
 
-.cart_total {
+.cart__total {
   margin: 12px 37px 0 0;
   font-family: Lato, "Arial", sans-serif;
   font-weight: 400;
@@ -1623,7 +1623,7 @@ body {
   margin: 21px auto 17px;
 }
 
-.cart_button-checkout {
+.cart__button-checkout {
   display: block;
   height: 50px;
   width: 273px;

@@ -16,7 +16,8 @@
                 <div class="header__contents">
                     <a href="index.html" class="header__main"> <img class="header__logo" src="./img/logo.svg" alt="logo"
                             width="44" height="38"></a>
-                            <a href="#" class="header__search"><img src="./img/loupe.svg" alt="search" width="26" height="27"></a>
+                    <a href="#" class="header__search"><img src="./img/loupe.svg" alt="search" width="26"
+                            height="27"></a>
                 </div>
                 <div class="header__contents">
                     <button type="button" class="header__button">
@@ -93,9 +94,9 @@
                                 <p class="cart__label"> Price: <span class="cart__price">$300</span></p>
                                 <p class="cart__label">Color: <span class="cart__color">Red</span></p>
                                 <p class="cart__label">Size: <span class="cart__size">Xl</span></p>
-                                <label class="cart__label" for="cart-quantity">Quantity:</label>
+                                <label class="cart__label" for="cart-quantity-1">Quantity:</label>
                                 <input class="cart__quantity" type="text" name="cart-quantity" placeholder="2"
-                                    id="cart-quantity">
+                                    id="cart-quantity-1">
                             </div>
 
                         </li>
@@ -106,45 +107,45 @@
                                 <p class="cart__label"> Price: <span class="cart__price">$300</span></p>
                                 <p class="cart__label">Color: <span class="cart__color">Red</span></p>
                                 <p class="cart__label">Size: <span class="cart__size">Xl</span></p>
-                                <label class="cart__label" for="cart-quantity">Quantity:</label>
-                                <input class="cart__quantity" type="text" name="cart-quantity" placeholder="2"
-                                    id="cart-quantity">
+                                <label class="cart__label" for="cart-quantity-2">Quantity:</label>
+                                <input class="cart__quantity" type="text" name="cart-quantity-2" placeholder="2"
+                                    id="cart-quantity-2">
                             </div>
                         </li>
                     </ul>
                     <div class="cart__manage-wrapper">
-                        <button type="button" class="cart_manage-button">
+                        <button type="button" class="cart__manage-button">
                             clear shopping cart
                         </button>
-                        <button type="button" class="cart_manage-button">
+                        <button type="button" class="cart__manage-button">
                             continue shopping
                         </button>
                     </div>
                 </div>
                 <div class="cart__box">
-                    <form class="cart__form" action="#"></form>
-                    <fieldset class="cart__fieldset">
-                        <legend class="cart__legend">
-                            shipping adress
-                        </legend>
-                        <label class="cart__label visually-hidden" for="country">Country</label>
-                        <input class="cart__input" type="text" name="country" placeholder="Bangladesh" id="country">
-                        <label class="cart__label visually-hidden" for="state">State</label>
-                        <input class="cart__input" type="text" name="state" placeholder="State" id="state">
-                        <label class="cart__label visually-hidden" for="postcode">Postcode / Zip</label>
-                        <input class="cart__input" type="text" name="postcode" placeholder="Postcode / Zip"
-                            id="postcode">
-                        <button type="button" class="cart__quote">get a quote</button>
+                    <form class="cart__form" action="#">
+                        <fieldset class="cart__fieldset">
+                            <legend class="cart__legend">
+                                shipping adress
+                            </legend>
+                            <label class="cart__label visually-hidden" for="country">Country</label>
+                            <input class="cart__input" type="text" name="country" placeholder="Bangladesh" id="country">
+                            <label class="cart__label visually-hidden" for="state">State</label>
+                            <input class="cart__input" type="text" name="state" placeholder="State" id="state">
+                            <label class="cart__label visually-hidden" for="postcode">Postcode / Zip</label>
+                            <input class="cart__input" type="text" name="postcode" placeholder="Postcode / Zip"
+                                id="postcode">
+                            <button type="button" class="cart__quote">get a quote</button>
 
-                    </fieldset>
-                    <fieldset class="cart__checkout">
-                        <p class="cart_subtotal">sub total <span class="cart__subtotal-price">$900</span></p>
-                        <p class="cart_total">grand total <span class="cart__total-price">$900</span></p>
-                        <div class="cart__line"></div>
-                        <button type="submit" class="cart_button-checkout">
-                            proceed to checkout
-                        </button>
-                    </fieldset>
+                        </fieldset>
+                        <fieldset class="cart__checkout">
+                            <p class="cart__subtotal">sub total <span class="cart__subtotal-price">$900</span></p>
+                            <p class="cart__total">grand total <span class="cart__total-price">$900</span></p>
+                            <div class="cart__line"></div>
+                            <button type="submit" class="cart__button-checkout">
+                                proceed to checkout
+                            </button>
+                        </fieldset>
                     </form>
                 </div>
             </div>
