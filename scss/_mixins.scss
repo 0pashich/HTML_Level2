@@ -1,5 +1,5 @@
 @mixin font($width: 400, $size: 16px, $height: 19px) {
-    font-family: Lato;
+    font-family: Lato, "Arial", sans-serif;
     font-weight: $width;
     font-size: $size;
     line-height: $height;
