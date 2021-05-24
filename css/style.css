@@ -1765,4 +1765,117 @@ body {
 .mb-128 {
   margin-bottom: 128px;
 }
+
+.products-grid__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+  justify-items: center;
+}
+
+@media (max-width: 1599px) {
+  .products-grid__list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 16px;
+            column-gap: 16px;
+    row-gap: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .products-grid__list {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.products-grid__item {
+  width: 360px;
+  min-height: 581px;
+  background-color: #f8f8f8;
+}
+
+.products-grid__wrapper-overlay {
+  position: relative;
+}
+
+.products-grid__wrapper-overlay:before {
+  content: "";
+  width: 100%;
+  min-height: 420px;
+  background: rgba(58, 56, 56, 0.86);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.products-grid__item:hover .products-grid__wrapper-overlay:before {
+  display: block;
+}
+
+.products-grid__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 138px;
+  height: 43px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-family: Lato, "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  background-image: url(../img/cart.svg);
+  background-size: 26px 24px;
+  background-repeat: no-repeat;
+  background-position: 13px center;
+  padding: 0 0 0 37px;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+}
+
+.products-grid__button:hover,
+.products-grid__button:focus {
+  border: 1px solid #f16d7f;
+}
+
+.products-grid__button {
+  display: none;
+}
+
+.products-grid__item:hover .products-grid__button {
+  display: block;
+}
+
+.products-grid__title {
+  font-family: Lato, "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 25px 18px 0;
+}
+
+.products-grid__description {
+  font-family: Lato, "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5d5d5d;
+  padding: 13px 28px 0 17px;
+}
+
+.products-grid__price {
+  color: #f16d7f;
+  padding: 18px 18px 20px;
+}
 /*# sourceMappingURL=style.css.map */
