@@ -1690,7 +1690,7 @@ body {
 .separator {
   width: 63px;
   height: 3px;
-  background: #EF5B70;
+  background: #ef5b70;
 }
 
 .product-name {
@@ -1710,7 +1710,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  color: #5E5E5E;
+  color: #5e5e5e;
   width: 555px;
 }
 
@@ -1719,7 +1719,7 @@ body {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  color: #EF5B70;
+  color: #ef5b70;
   text-align: center;
   margin: 32px auto 0;
 }
@@ -1750,7 +1750,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #EF5B70;
+  color: #ef5b70;
   padding: 0;
   margin: 48px auto 65px;
 }
@@ -1758,7 +1758,7 @@ body {
 .product-button-image {
   width: 26px;
   height: 24px;
-  fill: #EF5B70;
+  fill: #ef5b70;
   margin: 0 23px 0 0;
 }
 
@@ -1877,5 +1877,98 @@ body {
 .products-grid__price {
   color: #f16d7f;
   padding: 18px 18px 20px;
+}
+
+.filter__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 51px 0 65px 0;
+}
+
+.filter__link {
+  display: block;
+  text-decoration: none;
+  font-family: Lato, "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.filter__link-title {
+  margin: 0 11px 0 16px;
+  text-transform: uppercase;
+}
+
+.filter__box {
+  display: none;
+}
+
+.filter__select {
+  text-transform: uppercase;
+  font-family: Lato, "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  margin: 0 10px 0;
+  border: none;
+}
+
+.filter__select-header {
+  text-transform: uppercase;
+  display: none;
+}
+
+.filter__none {
+  width: 80px;
+}
+
+.pagination {
+  width: 283px;
+  height: 43px;
+  margin: 48px auto 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+}
+
+.pagination__icon {
+  margin: 13px 15px 15px 15px;
+}
+
+.pagination__link {
+  display: block;
+  margin: auto;
+  text-decoration: none;
+  font-family: Lato, "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9f9f9f;
+}
+
+.pagination__link--active {
+  color: #ef5b70;
+}
+
+.pagination__dots {
+  display: block;
+  margin: auto 0;
+  font-family: Lato, "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9f9f9f;
 }
 /*# sourceMappingURL=style.css.map */

@@ -89,7 +89,41 @@
                 </p>
             </div>
         </section>
+        <section class="filter container">
+            <div class="filter__wrapper">
+                <a href="" class="filter__link">
+                    <span class="filter__link-title">
+                        filter
+                    </span>
+                    <img src="./img/filter.svg" alt="filter" class="filter__link-image">
+                </a>
+                <div class="filter__box">
 
+                </div>
+                <div class="filter__sort">
+                    <select class="filter__select" name="category">
+                        <option class="filter__select-header" selected disabled>trending now</option>
+                        <option class="filter__select-selecter" value="2">2</option>
+                        <option class="filter__select-selecter" value="3">3</option>
+                        <option class="filter__select-selecter" value="4">4</option>
+                    </select>
+                    <select class="filter__select" name="size">
+                        <option class="filter__select-header" selected disabled>size</option>
+                        <option class="filter__select-selecter" value="xs">xs</option>
+                        <option class="filter__select-selecter" value="s">s</option>
+                        <option class="filter__select-selecter" value="m">m</option>
+                        <option class="filter__select-selecter" value="l">l</option>
+                    </select>
+                    <select class="filter__select" name="price">
+                        <option class="filter__select-header" selected disabled>price</option>
+                        <option class="filter__select-selecter" value="2">2</option>
+                        <option class="filter__select-selecter" value="3">3</option>
+                        <option class="filter__select-selecter" value="4">4</option>
+                    </select>
+                </div>
+                <div class="filter__none"></div>
+            </div>
+        </section>
         <section class="products-grid container">
             <h2 class="visually-hidden">Fetured Items</h2>
             <ul class="products-grid__list">
@@ -173,7 +207,20 @@
                 </li>
             </ul>
         </section>
-
+        <section class="pagination">
+            <a href="#"> <img src="./img/prev-p.svg" alt="prev" class="pagination__icon pagination__icon--prev"
+                    width="8" height="16"></a>
+            <a href="" class="pagination__link pagination__link--active">1</a>
+            <a href="" class="pagination__link">2</a>
+            <a href="" class="pagination__link">3</a>
+            <a href="" class="pagination__link">4</a>
+            <a href="" class="pagination__link">5</a>
+            <a href="" class="pagination__link">6</a>
+            <span class="pagination__dots">.....</span>
+            <a href="" class="pagination__link">20</a>
+            <a href="#"> <img src="./img/next-p.svg" alt="next" class="pagination__icon pagination__icon--next"
+                    width="8" height="16"></a>
+        </section>
     </main>
     <footer>
         <section class="subscribe">
